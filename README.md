@@ -11,3 +11,9 @@ R is a programming language and free software used for Statistical computation.
 
 
 ## Method 1 
+## By agricolae package 
+
+```install.packages("agricolae")
+library(agricolae)
+
+
