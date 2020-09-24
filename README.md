@@ -71,9 +71,8 @@ Viewing Imported data
 
 > Results are displayed which can be copied and saved. 
 
-![Image of Maize](https://github.com/nandp1/Line-Tester-Analysis/blob/master/maize.jpg)
 
-
+<img src="maize.jpg" width="800" />
 
 
 
