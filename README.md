@@ -33,7 +33,7 @@ We import the excel data file (Example: ltdata) by,
 
 You can just click on Import dataset and select your excel file. 
 
-![Data Import](https://github.com/nandp1/Line-Tester-Analysis/blob/master/dataimport.png)
+<img src="dataimport.jpg" width="800" />
 
 Viewing Imported data
 
