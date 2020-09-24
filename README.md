@@ -20,37 +20,34 @@ R is a programming language and free software used for Statistical computation.
 
 - Open R Studio and install package called **agricolae** 
 
-```install.packages('agricolae', dependencies=True)
-```                                        
+```install.packages('agricolae', dependencies=True)                                                                                                                              ```   
+                                     
 
 - Loading the installed package 
 
-```library(agricolae)
-```
+```library(agricolae)```
+
 
 There are two Line x Tester dataset in agricole package named as **heterosis** and **LxT**
 
 - Loading dataset **LxT**
 
-```data(LxT)
-```
+```data(LxT)                                                                                        ```
+
 
 - Understanding the struture of dataset. 
 
-```str(LxT)
-```
+```str(LxT)```
 
 - If you wish to view entire dataset then
 
-```View(LxT)
-```
+```View(LxT)```
 
 > There are 5 Lines and 3 Testers. Note that the parental data is mentioned at the end of the dataset. 
 
 - Now using the function `lineXtester` of the agricolae package we perform Line x Tester analysis. 
 
-```output2<-with(LxT,lineXtester(replication, line, tester, yield))
-```
+```output2<-with(LxT,lineXtester(replication, line, tester, yield))```
 
 > Results is displayed which can be copied and saved. 
 
