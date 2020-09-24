@@ -17,6 +17,7 @@ R is a programming language and free software used for Statistical computation.
 
 ## Method 1 
 ## By agricolae package 
+
 - Open R Studio and install package called **agricolae** 
 
 ```install.packages('agricolae', dependencies=True)
@@ -27,7 +28,7 @@ R is a programming language and free software used for Statistical computation.
 ```library(agricolae)
 ```
 
-There are two Line x Tester dataset in agricole package named as **heterosis** and **LxT**. 
+There are two Line x Tester dataset in agricole package named as **heterosis** and **LxT**
 
 - Loading dataset **LxT**
 
