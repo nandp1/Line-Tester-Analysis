@@ -5,6 +5,8 @@
 
 Contents
 
+Data Arrangement and Structure 
+
 [Method 1](https://github.com/nandp1/Line-Tester-Analysis/blob/master/README.md#method-1)
 
 ##  Setup R for your Computer
@@ -12,6 +14,14 @@ Contents
 R is a programming language and free software used for Statistical computation. 
 1. Download and Install the [R base](https://cloud.r-project.org/) package
 2. Download and Install the free version of [R Studio](https://rstudio.com/products/rstudio/download/) 
+
+
+## Data Arrangement and Structure 
+
+To begin the analysis first arrange the data into four columns namely `replication`, `line`, `tester` and `yield`. 
+
+> Note that an additional coloumn of `blocks` has to be added if its Incomplete Block Design (IBD). 
+
 
 
 
