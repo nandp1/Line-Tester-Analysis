@@ -43,7 +43,7 @@ Viewing Imported data
 ## Method 1 
 ## By agricolae package 
 
-- Open R Studio and install package called **agricolae** 
+-  Install package **agricolae** 
 
 ```install.packages('agricolae', dependencies=True)```   
                                      
@@ -70,6 +70,23 @@ Viewing Imported data
 ``` result2 = with(heterosis,lineXtester(Replication, Female, Male, v1))```
 
 > Results are displayed which can be copied and saved. 
+
+## Method 2
+
+Line x Tester analysis by `plantbreeding` package
+
+-  Install package **plantbreeding** 
+
+```install.packages("plantbreeding", repos="http://R-Forge.R-project.org")```   
+                                     
+- Loading the installed package 
+
+```library(plantbreeding)```
+
+```
+
+
+
 
 
 <img src="maize.jpg" width="800" />
