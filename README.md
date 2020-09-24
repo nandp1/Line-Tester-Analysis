@@ -35,7 +35,7 @@ You can just click on Import dataset and select your excel file.
 
 ![Data Import](https://github.com/nandp1/Line-Tester-Analysis/blob/master/dataimport.png)
 
-View your imported data by,
+Viewing Imported data
 
 ```View(ltdata)```
 
@@ -47,7 +47,6 @@ View your imported data by,
 
 ```install.packages('agricolae', dependencies=True)```   
                                      
-
 - Loading the installed package 
 
 ```library(agricolae)```
@@ -59,15 +58,18 @@ View your imported data by,
 > Note: There are two example Line x Tester dataset in agricole package named as **heterosis** and **LxT**. You can load them by,
 
 ```data(heterosis)```
-```data(LxT)```
 
+```data(LxT)```
 
 - Now using the function `lineXtester` of the agricolae package we perform Line x Tester analysis. 
 
-```result <-with(ltdata,lineXtester(replication, line, tester, yield))```
+```result = with(ltdata,lineXtester(replication, line, tester, yield))```
+
+ > Analysing heterosis dataset. 
+ 
+``` result2 = with(heterosis,lineXtester(Replication, Female, Male, v1))```
 
 > Results are displayed which can be copied and saved. 
-
 
 ![Image of Maize](https://github.com/nandp1/Line-Tester-Analysis/blob/master/maize.jpg)
 
