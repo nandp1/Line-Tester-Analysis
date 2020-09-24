@@ -29,47 +29,44 @@ We import the excel data file (Example: ltdata) by,
 
 ```ltdata = read_excel("ltdata.xlsx")```
 
-Or
+**Or**
 
 You can just click on Import dataset and select your excel file. 
 
 ![Data Import](https://github.com/nandp1/Line-Tester-Analysis/blob/master/dataimport.png)
+
+View your imported data by,
+
+```View(ltdata)```
+
 
 ## Method 1 
 ## By agricolae package 
 
 - Open R Studio and install package called **agricolae** 
 
-```install.packages('agricolae', dependencies=True)                                                                                                                              ```   
+```install.packages('agricolae', dependencies=True)```   
                                      
 
 - Loading the installed package 
 
 ```library(agricolae)```
 
-
-There are two Line x Tester dataset in agricole package named as **heterosis** and **LxT**
-
-- Loading dataset **LxT**
-
-```data(LxT)                                                                                        ```
-
-
 - Understanding the struture of dataset. 
 
-```str(LxT)```
+```str(ltdata)```
 
-- If you wish to view entire dataset then
+> Note: There are two example Line x Tester dataset in agricole package named as **heterosis** and **LxT**. You can load them by,
 
-```View(LxT)```
+```data(heterosis)```
+```data(LxT)```
 
-> There are 5 Lines and 3 Testers. Note that the parental data is mentioned at the end of the dataset. 
 
 - Now using the function `lineXtester` of the agricolae package we perform Line x Tester analysis. 
 
-```output2<-with(LxT,lineXtester(replication, line, tester, yield))```
+```result <-with(ltdata,lineXtester(replication, line, tester, yield))```
 
-> Results is displayed which can be copied and saved. 
+> Results are displayed which can be copied and saved. 
 
 
 ![Image of Maize](https://github.com/nandp1/Line-Tester-Analysis/blob/master/maize.jpg)
