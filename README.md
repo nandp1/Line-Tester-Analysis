@@ -51,7 +51,7 @@ There are two Line x Tester dataset in agricole package named as **heterosis** a
 ```output2<-with(LxT,lineXtester(replication, line, tester, yield))
 ```
 
-> The result is displayed. 
+> Results is displayed which can be copied and saved. 
 
 
 
