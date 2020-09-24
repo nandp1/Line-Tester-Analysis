@@ -3,9 +3,9 @@
   Here we learn on how to conduct Line by Tester analysis which is the most common design used by Plant Breeders to estimate Combining ability and Genetic variances. 
 
 
-Contents
+**Contents**
 
-Data Arrangement and Structure 
+[Data Arrangement and Structure](https://nandp1.github.io/Line-Tester-Analysis/#data-arrangement-and-structure)
 
 [Method 1](https://github.com/nandp1/Line-Tester-Analysis/blob/master/README.md#method-1)
 
@@ -18,12 +18,22 @@ R is a programming language and free software used for Statistical computation.
 
 ## Data Arrangement and Structure 
 
-To begin the analysis first arrange the data into four columns namely `replication`, `line`, `tester` and `yield`. 
+To begin the analysis first arrange the data into four columns namely `replication`, `line`, `tester` and `yield` in an excel file. 
 
 > Note that an additional coloumn of `blocks` has to be added if its Incomplete Block Design (IBD). 
 
+## Importing data in R
 
+After you have created your data file, paste it in your Working Directory. By default your working directory is Documents folder. 
+We import the excel data file (Example: ltdata) by, 
 
+```ltdata = read_excel("ltdata.xlsx")```
+
+Or
+
+You can just click on Import dataset and select your excel file. 
+
+![Data Import](https://github.com/nandp1/Line-Tester-Analysis/blob/master/dataimport.png)
 
 ## Method 1 
 ## By agricolae package 
