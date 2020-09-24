@@ -52,7 +52,7 @@ There are two Line x Tester dataset in agricole package named as **heterosis** a
 > Results is displayed which can be copied and saved. 
 
 
-
+![Image of Maize](https://github.com/nandp1/Line-Tester-Analysis/blob/master/maize.jpg)
 
 
 
