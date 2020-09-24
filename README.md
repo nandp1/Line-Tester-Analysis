@@ -33,7 +33,7 @@ We import the excel data file (Example: ltdata) by,
 
 You can just click on Import dataset and select your excel file. 
 
-<img src="dataimport.jpg" width="800" />
+<img src="dataimport.png" width="800" />
 
 Viewing Imported data
 
