@@ -1,5 +1,7 @@
-# Line-Tester-analysis
+# Welcome to Line by Tester Analysis 
 
-The repository contains R codes  Analysis of Variance for Line x Tester crossing design.
+##  Introduction 
 
-Codes for both Randomized complete block design (RCBD) and Alpha lattice are given. 
+ Here we learn on how to conduct Line by Tester analysis which is the most common design used by Plant Breeders to estimate Combining ability and Genetic variances. 
+
+
