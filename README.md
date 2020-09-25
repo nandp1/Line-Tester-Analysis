@@ -98,8 +98,8 @@ Line x Tester analysis by `plantbreeding` package
 
 - Analysing the ltdata by `line.tester` function. 
 
-```result3 <- line.tester(dataframe = linetester, yvar = "trait1",  genotypes = "genotypes",  replication = "replication",  Lines = "Lines", Testers = "Tester", gclass = "gclass" ) 
-print(result3)```
+```result3 <- line.tester(dataframe = linetester, yvar = "trait1",  genotypes = "genotypes",  replication = "replication",  Lines = "Lines", Testers = "Tester", gclass = "gclass" ) ```
+```print(result3)```
 
 - Saving the results 
 
@@ -110,8 +110,10 @@ print(result3)```
 
 This is an open source webpage make your contribution and help us to improve. 
 
-Contact me for any quaries 
-**Nandan Patil**
+Contact me for any query 
+
+**Nandan L. Patil**
+
 **patilnads@gmail.com**
 
 [Sponsar this project](https://issuehunt.io/r/https://issuehunt.io/u/nandp1)
