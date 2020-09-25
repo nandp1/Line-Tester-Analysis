@@ -70,14 +70,15 @@ Viewing Imported data
 
 ```result = with(ltdata,lineXtester(replication, line, tester, yield))```
 
+Results are displayed which can be copied and saved.
+
  > Analysing heterosis dataset. 
  
 ``` result2 = with(heterosis,lineXtester(Replication, Female, Male, v1))```
 
-> Results are displayed which can be copied and saved. 
 
 ## Method 2
-## Bt plantbreeding package
+## By plantbreeding package
 
 Line x Tester analysis by `plantbreeding` package
 
