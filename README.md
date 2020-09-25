@@ -17,7 +17,7 @@
 
 R is a programming language and free software used for Statistical computation. 
 1. Download and Install the [R base](https://cloud.r-project.org/) package
-2. Download and Install the free version of [R Studio](https://rstudio.com/products/rstudio/download/) 
+2. Next download and install the free version of [R Studio](https://rstudio.com/products/rstudio/download/) which is user friendly interface for R. 
 
 
 ## Data Arrangement and Structure 
@@ -31,7 +31,9 @@ To begin the analysis first arrange the data into four columns namely `replicati
 After you have created your data file, paste it in your Working Directory. By default your working directory is Documents folder. 
 We import the excel data file (Example: ltdata) by, 
 
-```ltdata = read_excel("ltdata.xlsx")```
+```r
+ltdata = read_excel("ltdata.xlsx")
+```
 
 **Or**
 
@@ -42,7 +44,9 @@ You can just click on Import dataset and select your excel file.
 
 Viewing Imported data
 
-```View(ltdata)```
+```r
+View(ltdata)
+```
 
 
 ## Method 1 
