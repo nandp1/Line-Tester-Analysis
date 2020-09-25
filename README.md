@@ -35,6 +35,7 @@ You can just click on Import dataset and select your excel file.
 
 <img src="dataimport.png" width="800" />
 
+
 Viewing Imported data
 
 ```View(ltdata)```
@@ -83,14 +84,15 @@ Line x Tester analysis by `plantbreeding` package
 
 ```library(plantbreeding)```
 
-```
+[Source code repository on Github](https://github.com/nandp1/Line-Tester-Analysis) 
 
+This is an open source webpage make your conytibution and help us to improve. 
+
+Contact me for any quaries 
+**Nandan Patil**
+**patilnads@gmail.com**
 
 
 
 
 <img src="maize.jpg" width="800" />
-
-
-
-
