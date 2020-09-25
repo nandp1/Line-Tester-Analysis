@@ -13,6 +13,11 @@
 [Method 1](https://github.com/nandp1/Line-Tester-Analysis/blob/master/README.md#method-1)
 
 [Method 2](https://github.com/nandp1/Line-Tester-Analysis/blob/master/README.md#method-2)
+
+<div id="P1" />
+
+---------------------------------------------
+
 ##  Setup R for your Computer
 
 R is a programming language and free software used for Statistical computation. 
