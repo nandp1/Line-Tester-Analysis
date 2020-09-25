@@ -117,7 +117,7 @@ Contact me for any query
 
 **patilnads@gmail.com**
 
-[Sponsar this project](https://issuehunt.io/r/https://issuehunt.io/u/nandp1)
+[Sponsar this project](https://issuehunt.io/r/nandp1/Line-Tester-analysis)
 
 
 <img src="maize.jpg" width="800" />
