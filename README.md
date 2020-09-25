@@ -1,5 +1,8 @@
 # Welcome to Line by Tester Analysis 
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nandp1/Line-Tester-Analysis/master) 
+
+ 
   Here we learn on how to conduct Line by Tester analysis which is the most common design used by Plant Breeders to estimate Combining ability and Genetic variances. 
 
 
@@ -73,26 +76,45 @@ Viewing Imported data
 > Results are displayed which can be copied and saved. 
 
 ## Method 2
+## Bt plantbreeding package
 
 Line x Tester analysis by `plantbreeding` package
 
 -  Install package **plantbreeding** 
 
-```install.packages("plantbreeding", repos="http://R-Forge.R-project.org")```   
+```install.packages("plantbreeding", repos="http://R-Forge.R-project.org", dependencies= T)```   
                                      
 - Loading the installed package 
 
 ```library(plantbreeding)```
 
-[Source code repository on Github](https://github.com/nandp1/Line-Tester-Analysis) 
+- linetester is an example dataset in the package. Loading and view the dataset.
+```data(linetester)```
 
-This is an open source webpage make your conytibution and help us to improve. 
+```View(linetester)```
+
+> Note that dataset has two addtional coloumns genotypes and gclass. genotypes is the name of the cross or parent. Ex: 1x2, 2x3, 2, 3. gclass metions whether the genotypes is cross or a parent. Thus, we have to add two addtional coloumns to ltdata. 
+
+
+- Analysing the ltdata by `line.tester` function. 
+
+```result3 <- line.tester(dataframe = linetester, yvar = "trait1",  genotypes = "genotypes",  replication = "replication",  Lines = "Lines", Testers = "Tester", gclass = "gclass" ) 
+print(result3)```
+
+- Saving the results 
+
+```ltresult = capture.output(print(result3), "ltresult.txt")```
+
+
+[All the script can be found on Github](https://github.com/nandp1/Line-Tester-Analysis) 
+
+This is an open source webpage make your contribution and help us to improve. 
 
 Contact me for any quaries 
 **Nandan Patil**
 **patilnads@gmail.com**
 
-
+[Sponsar this project](https://issuehunt.io/r/https://issuehunt.io/u/nandp1)
 
 
 <img src="maize.jpg" width="800" />
