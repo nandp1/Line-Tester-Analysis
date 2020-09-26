@@ -121,7 +121,9 @@ Line x Tester analysis by `plantbreeding` package
 
 This is an open source webpage make your contribution and help us to improve. 
 
-Contact me for any query 
+Contact me for any query. 
+
+Author
 
 **Nandan L. Patil**
 
