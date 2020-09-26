@@ -2,36 +2,138 @@
 
 You can use the [editor on GitHub](https://github.com/nandp1/Line-Tester-Analysis/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+W# Welcome to Line by Tester Analysis 
 
-### Markdown
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nandp1/Line-Tester-Analysis/master) 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+ 
+  Here we learn on how to conduct Line by Tester analysis which is the most common design used by Plant Breeders to estimate Combining ability and Genetic variances. 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+**Contents**
 
-- Bulleted
-- List
+[Data Arrangement and Structure](https://nandp1.github.io/Line-Tester-Analysis/#data-arrangement-and-structure)
 
-1. Numbered
-2. List
+[Method 1](https://github.com/nandp1/Line-Tester-Analysis/blob/master/README.md#method-1)
 
-**Bold** and _Italic_ and `Code` text
+[Method 2](https://github.com/nandp1/Line-Tester-Analysis/blob/master/README.md#method-2)
 
-[Link](url) and ![Image](src)
+<div id="P1" />
+
+---------------------------------------------
+
+##  Setup R for your Computer
+
+R is a programming language and free software used for Statistical computation. 
+1. Download and Install the [R base](https://cloud.r-project.org/) package
+2. Next download and install the free version of [R Studio](https://rstudio.com/products/rstudio/download/) which is user friendly interface for R. 
+
+
+## Data Arrangement and Structure 
+
+To begin the analysis first arrange the data into four columns namely `replication`, `line`, `tester` and `yield` in an excel file. 
+
+> Note that an additional coloumn of `blocks` has to be added if its Incomplete Block Design (IBD). 
+
+## Importing data in R
+
+After you have created your data file, paste it in your Working Directory. By default your working directory is Documents folder. 
+We import the excel data file (Example: ltdata) by, 
+
+```r
+ltdata = read_excel("ltdata.xlsx")
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Or**
 
-### Jekyll Themes
+You can just click on Import dataset and select your excel file. 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nandp1/Line-Tester-Analysis/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<img src="dataimport.png" width="800" />
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Viewing Imported data
+
+```r
+View(ltdata)
+```
+
+
+## Method 1 
+## By agricolae package 
+
+-  Install package **agricolae** 
+
+```install.packages('agricolae', dependencies=True)```   
+                                     
+- Loading the installed package 
+
+```library(agricolae)```
+
+- Understanding the struture of dataset. 
+
+```str(ltdata)```
+
+> Note: There are two example Line x Tester dataset in agricole package named as **heterosis** and **LxT**. You can load them by,
+
+```data(heterosis)```
+
+```data(LxT)```
+
+- Now using the function `lineXtester` of the agricolae package we perform Line x Tester analysis. 
+
+```result = with(ltdata,lineXtester(replication, line, tester, yield))```
+
+Results are displayed which can be copied and saved.
+
+ > Analysing heterosis dataset. 
+ 
+``` result2 = with(heterosis,lineXtester(Replication, Female, Male, v1))```
+
+
+## Method 2
+## By plantbreeding package
+
+Line x Tester analysis by `plantbreeding` package
+
+-  Install package **plantbreeding** 
+
+```install.packages("plantbreeding", repos="http://R-Forge.R-project.org", dependencies= T)```   
+                                     
+- Loading the installed package 
+
+```library(plantbreeding)```
+
+- linetester is an example dataset in the package. Loading and view the dataset.
+```data(linetester)```
+
+```View(linetester)```
+
+> Note that dataset has two addtional coloumns genotypes and gclass. genotypes is the name of the cross or parent. Ex: 1x2, 2x3, 2, 3. gclass metions whether the genotypes is cross or a parent. Thus, we have to add two addtional coloumns to ltdata. 
+
+
+- Analysing the ltdata by `line.tester` function. 
+
+```result3 <- line.tester(dataframe = linetester, yvar = "trait1",  genotypes = "genotypes",  replication = "replication",  Lines = "Lines", Testers = "Tester", gclass = "gclass" ) ```
+```print(result3)```
+
+- Saving the results 
+
+```ltresult = capture.output(print(result3), "ltresult.txt")```
+
+
+[All the script can be found on Github](https://github.com/nandp1/Line-Tester-Analysis) 
+
+This is an open source webpage make your contribution and help us to improve. 
+
+Contact me for any query. 
+
+Author
+
+**Nandan L. Patil**
+
+**patilnads@gmail.com**
+
+[Sponsar this project](https://issuehunt.io/r/nandp1/Line-Tester-analysis)
+
+
+<img src="maize.jpg" width="800" />
