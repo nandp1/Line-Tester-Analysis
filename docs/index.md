@@ -1,8 +1,4 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/nandp1/Line-Tester-Analysis/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-W# Welcome to Line by Tester Analysis 
+##Welcome to Line by Tester Analysis 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nandp1/Line-Tester-Analysis/master) 
 
@@ -137,3 +133,5 @@ Author
 
 
 <img src="maize.jpg" width="800" />
+
+You can use the [editor on GitHub](https://github.com/nandp1/Line-Tester-Analysis/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
