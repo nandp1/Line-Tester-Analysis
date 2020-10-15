@@ -136,4 +136,4 @@ Author
 [Sponsar this project](https://issuehunt.io/r/nandp1/Line-Tester-analysis)
 
 
-
+Special thanks to LAKSHMI
